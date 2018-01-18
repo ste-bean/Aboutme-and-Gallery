@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhotoGallery</title>
+    <style>
+div.gallery {
+    margin: 100px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 200%;
+    height: auto;
+}
+
+div.desc {
+
+    width: 200px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<a href="/aboutme">Aboutme</a>
+<h1>This are Photos</h1>
+<div class="gallery">
+  <a target="_blank" href="Photo.jpg">
+    <img src={% static 'images/Photo.JPG'%} alt="Photo" width="400" height="300">
+  </a>
+  <div class="desc">Christmas Party 2K16</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Photo2.jpg">
+    <img src={% static 'images/Photo2.JPG'%} alt="Photo2" width="300" height="200">
+  </a>
+  <div class="desc">Mama and Dai Nicole</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Photo3.jpg">
+    <img src={% static 'images/Photo3.JPG'%} alt="Photo3" width="300" height="200">
+  </a>
+  <div class="desc">Mama and Dai Talie </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Photo4.jpg">
+    <img src={% static 'images/Photo4.JPG'%} alt="Photo4" width="300" height="200">
+  </a>
+  <div class="desc">Profile</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Photo5.jpg">
+    <img src={% static 'images/Photo5.JPG'%} alt="Photo5" width="300" height="200">
+  </a>
+  <div class="desc">Profile2</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Photo6.jpg">
+    <img src={% static 'images/Photo6.JPG'%} alt="Photo4" width="300" height="200">
+  </a>
+  <div class="desc">Inday Iya</div>
+</div>
+
+</body>
+</html>
